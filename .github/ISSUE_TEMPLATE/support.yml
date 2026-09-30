@@ -1,0 +1,45 @@
+name: ChemCreate support request
+description: Report a reproducible problem or request help with ChemCreate.
+title: "[Support] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a **public** issue tracker. Do not attach confidential, proprietary,
+        unpublished, personal, or security-sensitive chemical structures or documents.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I will not include confidential or unpublished chemical structures or documents.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: ChemCreate version
+      placeholder: "For example: 1.0 (100)"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and device
+      placeholder: "For example: macOS 14.7, MacBook Pro (Apple silicon)"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use sanitized examples only. Do not upload confidential files.
+    validations:
+      required: true
