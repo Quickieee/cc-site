@@ -6,6 +6,7 @@ The current release supports Apple silicon Macs with macOS 14 or later, iPhone w
 
 | Information | English | 简体中文 |
 | --- | --- | --- |
+| How to use ChemCreate | [Help](HELP.md) | [使用帮助](HELP.md) |
 | Privacy policy | [Privacy](PRIVACY.md) | [隐私政策](PRIVACY.zh-CN.md) |
 | Help and contact | [Support](SUPPORT.md) | [支持与联系](SUPPORT.zh-CN.md) |
 | Third-party licenses | [Notices](THIRD_PARTY_NOTICES.txt) | [第三方许可原文](THIRD_PARTY_NOTICES.txt) |
