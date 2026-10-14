@@ -1,85 +1,23 @@
-# ChemCreate Website
+# ChemCreate
 
-Public website and App Store support pages for ChemCreate.
+ChemCreate is a native 2D chemical structure editor for Mac, iPhone, and iPad. Draw and edit molecular structures, save editable `.chemcreate` documents, and exchange chemistry data in MOL, SDF, and SMILES formats. Chemistry processing and NMR prediction run on the device.
 
-ChemCreate itself is developed in a private repository. Public product claims in this
-repository should be kept aligned with the latest verified release audit, privacy
-manifest, and third-party notices from the app repository.
+The current release supports Apple silicon Macs with macOS 14 or later, iPhone with iOS 17 or later, and iPad with iPadOS 17 or later. ChemCreate does not require an account or a developer-operated cloud service. Exporting to another format may not preserve every drawing annotation; the app reports representational loss before export.
 
-## Purpose
+| Information | English | 简体中文 |
+| --- | --- | --- |
+| Privacy policy | [Privacy](PRIVACY.md) | [隐私政策](PRIVACY.zh-CN.md) |
+| Help and contact | [Support](SUPPORT.md) | [支持与联系](SUPPORT.zh-CN.md) |
+| Third-party licenses | [Notices](THIRD_PARTY_NOTICES.txt) | [第三方许可原文](THIRD_PARTY_NOTICES.txt) |
 
-This site is intended to provide stable public URLs for:
+For private support or privacy questions, email **quickiee@foxmail.com**. Please do not post confidential or unpublished chemical structures in public GitHub issues.
 
-- product information;
-- App Store privacy policy;
-- user support;
-- open-source software notices.
+This public repository contains ChemCreate product, support, privacy, and license information. It is not the application source repository. The documents are rendered directly by GitHub; no GitHub Pages site is required.
 
-The site is deliberately static: no framework, package manager, analytics SDK,
-advertising, tracking, third-party fonts, or application cookies are required.
+---
 
-## Pages
+ChemCreate 是适用于 Mac、iPhone 和 iPad 的原生二维化学结构编辑器。你可以绘制和编辑分子结构，以 `.chemcreate` 保存可编辑文稿，并通过 MOL、SDF 和 SMILES 交换化学数据。化学处理与 NMR 预测在设备本地运行。
 
-- `/` — product overview
-- `/privacy/` — Privacy Policy
-- `/support/` — Support
-- `/licenses/` — Open Source Notices
-- `/zh-cn/` — Simplified Chinese site
+当前版本支持 macOS 14 或更新版本的 Apple 芯片 Mac、iOS 17 或更新版本的 iPhone，以及 iPadOS 17 或更新版本的 iPad。应用无需账号或开发者运营的云服务。外部格式无法保存全部绘图标注时，应用会在导出前提示信息损失。
 
-## Local preview
-
-Serve the repository root with any static web server, for example:
-
-```sh
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000/`.
-
-## Validation
-
-```sh
-python3 scripts/check_site.py
-```
-
-The checker verifies required App Store-facing pages, internal links, language
-alternates, and basic privacy/support content.
-
-## GitHub Pages
-
-Publish the repository root from the `main` branch using GitHub Pages. The expected
-default URL is:
-
-`https://quickieee.github.io/cc-site/`
-
-A custom domain can be added later without changing the site architecture.
-
-## Release gates
-
-Before using these URLs in a production App Store submission:
-
-1. verify the published site is reachable over HTTPS;
-2. confirm the Privacy Policy still matches the shipping app and App Store Connect
-   privacy answers;
-3. confirm the support page exposes a current, monitored contact route and add a
-   private contact method where required by applicable law or App Store review;
-4. set the final legal copyright holder consistently in the app, App Store Connect,
-   and site if displayed;
-5. update product claims whenever the shipping app's capabilities change;
-6. add only Apple's official App Store badges after a public App Store product URL
-   exists.
-
-## Apple references
-
-- App privacy:
-  https://developer.apple.com/help/app-store-connect/reference/app-information/app-privacy/
-- Platform version information / Support URL:
-  https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information
-- App Review Guidelines:
-  https://developer.apple.com/app-store/review/guidelines/
-
-## Source-of-truth policy
-
-For release work, do not infer capabilities from roadmap text. Use the shipping build
-and the latest verified release audit. In particular, privacy statements must stay
-consistent with the app's `PrivacyInfo.xcprivacy`.
+私密支持或隐私问题请发送邮件至 **quickiee@foxmail.com**。请勿在公开 GitHub Issue 中发布机密或未发表的化学结构。
